@@ -12,6 +12,8 @@ python:
 before_install:
   - sudo mkdir /usr/share/crmsh
   - sudo chmod 777 /usr/share/crmsh
+
+install: pip install tox-travis
   
 script:
   - python setup.py install
